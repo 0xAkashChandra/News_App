@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--this is the layout of the item which are being repeated in the recycler View-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:text="title"
+        android:textColor="#212121"
+        />
+<!--    maxLines shorten the text to fit in maxLines and ellipsize will come in play when there is more text then 2 lines so it will put ... at end-->
+    <TextView
+        android:id="@+id/author"
+        android:layout_marginTop="6dp"
+        android:text="author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#212121"
+        />
+</LinearLayout>
